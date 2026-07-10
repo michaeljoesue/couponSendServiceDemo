@@ -1,0 +1,149 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* ベーススタイル */
+.select,
+.input {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #fff;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.select:focus,
+.input:focus {
+  outline: none;
+  border-color: #1a56db;
+  box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.12);
+}
+
+/* エラー状態: 枠を赤に */
+.input--error {
+  border-color: #ef4444;
+  background-color: #fff9f9;
+}
+
+.input--error:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
+}
+
+.select--error {
+  border-color: #ef4444;
+  background-color: #fff9f9;
+}
+
+.select--error:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
+}
+
+/* 有効状態: 緑枠 */
+.input--valid {
+  border-color: #22c55e;
+}
+
+.input--valid:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.12);
+}
+
+.select--valid {
+  border-color: #22c55e;
+}
+
+/* フィールドごとのインラインエラーメッセージ */
+.fieldError {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  color: #dc2626;
+  animation: fadeIn 0.15s ease;
+}
+
+.fieldError::before {
+  content: '⚠';
+  font-size: 0.75rem;
+}
+
+/* 残高ヒントテキスト */
+.hint {
+  font-size: 0.78rem;
+  color: #6b7280;
+}
+
+/* 送金ボタン */
+.button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1a56db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s, opacity 0.15s;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #1e40af;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* 送金結果アラート */
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  animation: fadeIn 0.2s ease;
+}
+
+.alertIcon {
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+}
+
+.alert--success {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border: 1.5px solid #6ee7b7;
+}
+
+.alert--error {
+  background-color: #fef2f2;
+  color: #991b1b;
+  border: 1.5px solid #fca5a5;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "906ae09d-3701-4f78-8fe1-9be221547148",
+    "username": "John",
+    "value": 50000
+  },
+  {
+    "id": "181cd98b-d1a8-46a3-bc77-a0ed4d40f702",
+    "username": "Ken",
+    "value": 12000
+  },
+  {
+    "id": "082e9f30-eb17-4e13-b11d-127bc137b1f1",
+    "username": "Alice",
+    "value": 400
+  },
+  {
+    "id": "ab29face-0abf-4593-962d-ee7e35992697",
+    "username": "Bob",
+    "value": 999999
+  },
+  {
+    "id": "b2fa83ac-2091-4f11-a70f-c9bd825bd907",
+    "username": "Eve",
+    "value": 0
+  },
+  {
+    "id": "3def129c-4378-4c74-9ed2-ec6f10014432",
+    "username": "Mike",
+    "value": 1000
+  },
+  {
+    "id": "72474af7-e299-48c6-a0f4-0d61deecc9b4",
+    "username": "Sara",
+    "value": 1000000
+  },
+  {
+    "id": "b5041a4c-006d-4bc3-aba2-45f61b75a8f8",
+    "username": "Tom",
+    "value": 41200
+  },
+  {
+    "id": "4c0e9c86-20b0-454b-aa56-939836148c92",
+    "username": "Lily",
+    "value": 10000
+  },
+  {
+    "id": "2ebbe6ca-20a0-45a1-8eac-7a37f009bc13",
+    "username": "James",
+    "value": 59800
+  }
+]

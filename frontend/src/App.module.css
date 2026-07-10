@@ -1,0 +1,60 @@
+:root {
+  --color-primary: #1a56db;
+  --color-primary-dark: #1e40af;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f2f5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Yu Gothic', sans-serif;
+  color: #111;
+}
+
+.header {
+  background-color: var(--color-primary);
+  padding: 1rem 1.5rem;
+}
+
+.headerTitle {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.layout {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  align-items: flex-start;
+}
+
+.panel {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.panelTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  .layout {
+    flex-direction: column;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+}

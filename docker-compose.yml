@@ -1,0 +1,22 @@
+version: '3.9'
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - frontend
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    environment:
+      - VITE_PROXY_TARGET=http://backend:8080
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
